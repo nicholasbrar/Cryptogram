@@ -12,7 +12,7 @@ string swapCharacters(const string& input, const unordered_map<char, char>& swap
     for (char& c : output) {
         if (swaps.count(c) && swappedCharacters.find(c) == swappedCharacters.end()) {
             c = swaps.at(c);
-            swappedCharacters.insert(c); // Insert the new character to the set to mark it as swapped
+            swappedCharacters.insert(c); 
         }
     }
     return output;
